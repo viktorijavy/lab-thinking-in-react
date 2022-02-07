@@ -32,3 +32,16 @@
   justify-content: center;
   width: 50%
 }
+
+.red {
+  color: red;
+}
+
+
+
+.checkbox {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  
+}

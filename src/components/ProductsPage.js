@@ -7,13 +7,14 @@ const ProductsPage = () => {
 
     const [products, setProducts] = useState(jsonData);
     const [ query, setQuery ] = useState('')
+    const [ check, setCheck ] = useState(null)
 
 
     
     return  (
         <div>
-          <SearchBar/>
-          <ProductTable products={products}/>
+          <SearchBar query={setQuery} check={check}/>
+          <ProductTable products={products} query={query} check={setCheck}/>
         </div>    
     )
   }

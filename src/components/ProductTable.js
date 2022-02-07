@@ -16,7 +16,9 @@ const ProductTable = (props) => {
                 </thead>
 
                 <tbody>
-                    {props.products.map(product => {
+                    {props.products
+                    .filter(product => product.name.toLowerCase().includes(props.query.toLowerCase()))
+                    .map(product => {
 
                         return <ProductRow product={product} />
                         
